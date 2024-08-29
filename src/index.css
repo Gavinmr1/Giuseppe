@@ -30,24 +30,23 @@
     }
 
     body {
-        @apply bg-background
+        @apply bg-background;
+      }
+      * {
+        @apply text-foreground;
+      }
     }
-
-    * {
-        @apply text-foreground
+    
+    :root {
+      --background: #fff;
+      --foreground: #000;
+      --primary: #0070f3;
+      --secondary: #ff0080;
     }
-}
-
-:root {
-    --background: #f9f9f9;
-    --foreground: #333;
-    --primary: #0070f3;
-    --secondary: #ff0080;
-}
-
-.dark {
-    --background: #111;
-    --foreground: #f9f9f9;
-    --primary: #0070f3;
-    --secondary: #ff0080;
-}
+    
+    .dark {
+      --background: #000;
+      --foreground: #fff;
+      --primary: #64ffda;
+      --secondary: #ff79c6;
+    }
