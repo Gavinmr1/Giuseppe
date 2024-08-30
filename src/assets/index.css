@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --spacing: 1rem;
+    --inner-spacing: 0.75rem;
+  }
+
+  @media screen(sm) {
+    :root {
+      --spacing: 1.5rem;
+      --inner-spacing: 1rem;
+    }
+  }
+
+  @media screen(md) {
+    :root {
+      --spacing: 2rem;
+      --inner-spacing: 1.25rem;
+    }
+  }
+
+  @media screen(2xl) {
+    :root {
+      --spacing: 3rem;
+      --inner-spacing: 1.5rem;
+    }
+  }
+
+  body {
+    @apply bg-background;
+  }
+  * {
+    @apply text-foreground;
+  }
+}
+
+:root {
+  --background: #fff;
+  --foreground: #000;
+  --primary: #0070f3;
+  --secondary: #ff0080;
+}
+
+.dark {
+  --background: #000;
+  --foreground: #fff;
+  --primary: #64ffda;
+  --secondary: #ff79c6;
+}

@@ -4,7 +4,10 @@ export const Route = createFileRoute('/')({
   loader: () => {
     const isSystemDark = matchMedia('(prefers-color-scheme: dark)').matches
     const localTheme = localStorage.theme
-    const toggle = document.documentElement.classList.toggle.bind(document.documentElement.classList, 'dark')
+    const toggle = document.documentElement.classList.toggle.bind(
+      document.documentElement.classList,
+      'dark'
+    )
     toggle(!localTheme ? isSystemDark : localTheme === 'dark')
     return toggle
   },
@@ -13,8 +16,8 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   return (
-    <div className='text-5xl p-spacing'>
-      <h1 className='pb-inner-spacing gap-spacing'>Home</h1>
+    <div className='p-spacing text-5xl'>
+      <h1 className='gap-spacing pb-inner-spacing text-red-500'>Home</h1>
     </div>
   )
 }
