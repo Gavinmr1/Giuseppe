@@ -14,6 +14,10 @@ export default {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
       },
+      maxWidth: {
+        '8xl': '88rem',
+        '9xl': '96rem',
+      },
     },
   },
   plugins: [],

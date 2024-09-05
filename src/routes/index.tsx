@@ -17,7 +17,8 @@ export const Route = createFileRoute('/')({
 function Home() {
   return (
     <div className='p-spacing text-5xl'>
-      <h1 className='gap-spacing pb-inner-spacing text-red-500'>Home</h1>
+      <h1 className='gap-spacing pb-inner-spacing text-red-500'>Riggs Space</h1>
+      <p>The space app for nerd like Gavin Riggs!</p>
     </div>
   )
 }
